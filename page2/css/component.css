@@ -1,0 +1,73 @@
+.component {
+    padding: 32px 100px 60px 40px;
+    position: relative;
+    max-width: 825px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 12px;
+}
+
+
+.component-container {
+    
+}
+.component-tittle {
+    font-size: 28px;
+    line-height: 38px;
+}
+.tabs {
+    margin: 20px 0 0 0;
+
+}
+
+.tabs-menu {
+    display: inline-flex;
+    /* cursor: pointer; */
+}
+.tabs-menu :last-child {
+    margin: 0 0 0 30px;
+}
+
+.tabs-menu>a:after {
+    display:block;
+    padding:0 0 5px;
+    content: '';
+    border-bottom: 5px solid var(--black);  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out; 
+} 
+
+
+.tabs-menu>a:hover:after {
+    transform: scaleX(1);
+    color: var(--black);
+}
+
+.tabs-item {
+    color: var(--grey-2);
+}
+
+.tabs-item:hover {
+    color: var(--black);
+}
+
+.tabs-body {
+    overflow:scroll;
+}
+
+.tabs-divider {
+    position: absolute;
+    width: 100%;
+    transform: translate(-5%, 0);
+    height: 1px;
+    background-color: var(--grey-2);
+}
+
+.tabs-block {
+    overflow: scroll;
+    display: none;
+}
+
+.tabs-block:target {
+    display: block;
+}

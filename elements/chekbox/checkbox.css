@@ -1,0 +1,139 @@
+.flex-input {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox {
+    display: inline-block;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-state {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-control {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox-icon {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.checkbox-legend {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+    margin: 0 0 0 15px;
+}
+
+.checkbox-input:checked ~ .checkbox-state .checkbox-control {
+    background: var(--blue-1);
+    border-color: var(--blue-1);
+}
+
+.checkbox-input:checked ~ .checkbox-state .checkbox-icon {
+    display: block;
+}
+
+.checkbox-input:disabled ~ .checkbox-state .checkbox-control {
+    background: var(--grey-2);
+    border-color: var(--grey-2);
+    pointer-events: none;
+}
+
+.checkbox-legend_disabled {
+    color: var(--grey-2);
+}
+/* radio */
+
+
+.radio-input {
+    display: none;
+}
+.radio-state {
+    display: inline-flex;
+    align-items: center;
+}
+.radio-control {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 14px;
+}
+.radio-icon {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.radio-input:checked ~ .radio-state .radio-control {
+    border-color: var(--blue-1);
+}
+
+.radio-input:checked ~ .radio-state .radio-icon {
+   display: block;
+}
+
+.radio-input:disabled ~ .radio-state .radio-control {
+    background: var(--grey-2);
+    border-color: var(--grey-2);
+    pointer-events: none;
+}
+
+@media (max-width: 992px){
+    .radio-input:disabled ~ .radio-state .radio-control,
+    .checkbox-input:disabled ~ .checkbox-state .checkbox-control {
+        display: none;
+    }
+
+    .checkbox-legend_disabled {
+        display: none;
+    }
+
+    .flex-input {
+        flex-direction: column;
+        gap: 0;
+    }
+    .flex-checkbox,
+    .flex-radio  {
+        gap: 0;
+        align-items: flex-start;
+    }
+
+
+}

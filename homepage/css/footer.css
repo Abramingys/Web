@@ -1,0 +1,39 @@
+.footer {
+    padding: 70px 24px 130px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 640px;
+}
+.footer-tittle {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    margin: 0 0 30px;
+
+}
+.footer-text {
+    font-size: 16px;
+    line-height: 24px;
+
+}
+@media (max-width: 768px){
+    .footer {
+        padding: 70px 24px 100px;  
+    }
+}
+
+@media (max-width: 560px) {
+    .footer-tittle {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .footer-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .footer {
+        padding: 70px 24px 70px;
+    }
+}
+
+

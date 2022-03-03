@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../homepage/css/normalize.css">
+    <link rel="stylesheet" href="../homepage/css/style.css">
+    <link rel="stylesheet" href="../variables/variables.css">
+    <link rel="stylesheet" href="../homepage/css/header.css">
+    <link rel="stylesheet" href="./page2.css">
+    <link rel="stylesheet" href="./css/component.css">
+    <link rel="stylesheet" href="../elements/tooltiip/style.css">
+    <link rel="stylesheet" href="../elements/calendar/calendar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="container">
+              <div class="header-iner">
+                  <img class="header-burger" src="../img/headerburger.svg" alt="">
+                  <div class="header-logo">
+                      <a href="../homepage/index.html">
+                          <img src="../img/headerlogo.svg" alt="#">
+                      </a>
+                  </div>
+                  <ul class="header-list">
+                      <li class="header-item"><a class="header-item_color" href="#">Components</a></li>
+                      <li class="header-item"><a class="header-item_color" href="#">About</a></li>
+                      <li class="header-item"><a class="header-item_color" href="#">Contact</a></li>
+                  </ul>
+                  <div class="header-input">
+                      <img src="../img/headerinput.svg" alt="">
+                  </div>
+              </div>
+            </div>
+        </header>
+            <div class="container container_flex"> 
+                <div class="wrap__main">
+                    <div class="sidebar">
+                        <ul class="sidebar-list">
+                            <li class="sidebar-tittle">Elements</li>
+                            <li class="sidebar-item">Tooltip</li>
+                            <li class="sidebar-item">Custom form elements</li>
+                            <li class="sidebar-item">Histogram</li>
+                            <li class="sidebar-item">Avatar</li>
+                        </ul>
+                        <ul class="sidebar-list">
+                            <li class="sidebar-tittle">Container</li>
+                            <li class="sidebar-item">Calendar</li>
+                            <li class="sidebar-item">Modal dialog</li>
+                            <li class="sidebar-item">Sceleton</li>
+                            <li class="sidebar-item">Accordion</li>
+                        </ul>
+                    </div>
+                    <div class="component">
+                        <div class="component-container">
+                            <!-- <h3 class="component-tittle">Tooltip</h3>
+                            <div class="tooltip inner-page_tooltip">
+                                <div class="tooltip-help">Helper text</div>
+                                <div class="tooltip-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12Z" fill="#4263EB"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2582 8.02428C11.7927 7.94443 11.314 8.03191 10.9068 8.27123C10.4996 8.51054 10.1902 8.88625 10.0335 9.3318C9.85018 9.85279 9.27926 10.1266 8.75827 9.9433C8.23728 9.76002 7.96351 9.18911 8.14678 8.66812C8.46025 7.77701 9.07898 7.02559 9.89339 6.54696C10.7078 6.06833 11.6653 5.89337 12.5964 6.05307C13.5274 6.21277 14.3719 6.69682 14.9802 7.41949C15.5884 8.14201 15.9214 9.05644 15.9201 10.0009C15.9197 11.5312 14.7851 12.5419 13.9748 13.082C13.5392 13.3724 13.1107 13.586 12.795 13.7263C12.6358 13.7971 12.5016 13.8508 12.405 13.8876C12.3566 13.906 12.3174 13.9203 12.2888 13.9305L12.2541 13.9426L12.243 13.9464L12.2391 13.9477L12.2376 13.9482C12.2373 13.9483 12.2363 13.9486 11.9201 13L12.2363 13.9486C11.7124 14.1233 11.1461 13.8401 10.9714 13.3162C10.7969 12.7926 11.0796 12.2267 11.6028 12.0516L11.6016 12.0521C11.6017 12.052 11.6018 12.052 11.6028 12.0516L11.6188 12.046C11.6342 12.0406 11.6594 12.0314 11.693 12.0186C11.7605 11.9929 11.8607 11.9529 11.9827 11.8986C12.2296 11.7889 12.551 11.6275 12.8654 11.4179C13.555 10.9582 13.9201 10.4691 13.9201 9.99996L13.9201 9.99847C13.9208 9.52615 13.7543 9.06883 13.4502 8.70749C13.146 8.34615 12.7238 8.10413 12.2582 8.02428Z" fill="#4263EB"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15C12.5523 15 13 15.4477 13 16V16.5C13 17.0523 12.5523 17.5 12 17.5C11.4477 17.5 11 17.0523 11 16.5V16C11 15.4477 11.4477 15 12 15Z" fill="#4263EB"/>
+                                    </svg>
+                                 </div>
+                             </div> -->
+                             <div class="calendar">
+                                <div class="calendar-tittle">October 2019</div>
+                                <div class="calendar-wrap">
+                                    <div class="calendar-iner">
+                                        <span class="calendar-day">Mon</span>
+                                        <span class="calendar-day">Tue</span>
+                                        <span class="calendar-day">Wen</span>
+                                        <span class="calendar-day">Thu</span>
+                                        <span class="calendar-day">Fri</span>
+                                        <span class="calendar-day">Sut</span>
+                                        <span class="calendar-day">Sun</span>
+                                        <span class="calendar-item"></span>
+                                        <span class="calendar-item"></span>
+                                        <span class="calendar-item"></span>
+                                        <span class="calendar-item"></span>
+                                        <span class="calendar-item">1</span>
+                                        <span class="calendar-item">2</span>
+                                        <span class="calendar-item">3</span>
+                                        <span class="calendar-item">4</span>
+                                        <span class="calendar-item">5</span>
+                                        <span class="calendar-item">6</span>
+                                        <span class="calendar-item">7</span>
+                                        <span class="calendar-item">8</span>
+                                        <span class="calendar-item">9</span>
+                                        <span class="calendar-item">10</span>
+                                        <span class="calendar-item">11</span>
+                                        <span class="calendar-item">12</span>
+                                        <span class="calendar-item">13</span>
+                                        <span class="calendar-item">14</span>
+                                        <span class="calendar-item">15</span>
+                                        <span class="calendar-item">16</span>
+                                        <span class="calendar-item">17</span>
+                                        <span class="calendar-item calendar__item_active">18</span>
+                                        <span class="calendar-item calendar__item_beetwen-active">19</span>
+                                        <span class="calendar-item calendar__item_beetwen-active">20</span>
+                                        <span class="calendar-item calendar__item_beetwen-active">21</span>
+                                        <span class="calendar-item calendar__item_beetwen-active">22</span>
+                                        <span class="calendar-item calendar__item_active">23</span>
+                                        <span class="calendar-item">24</span>
+                                        <span class="calendar-item">25</span>
+                                        <span class="calendar-item">26</span>
+                                        <span class="calendar-item">27</span>
+                                        <span class="calendar-item">28</span>
+                                        <span class="calendar-item">29</span>
+                                        <span class="calendar-item">30</span>
+                                        <span class="calendar-item">31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="tabs">
+                            <nav class="tabs-menu">
+                                <a href="#tab01" class="tabs-item">HTML</a>
+                                <a href="#tab02" class="tabs-item">CSS</a>
+                            </nav>
+                            <div class="tabs-divider"></div>
+                            <div class="tabs-body"></div>
+                                <div id="tab01" class="tabs-block">
+                                    <pre>
+                                        <code>
+<!-- &lt;div class="tooltip"&gt;
+    &lt;div class="tooltip__icon"&gt;
+        &lt;svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 24 24" class="svg-icon"&gt;
+            &lt;use xlink:href="#help"&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class="tooltip__help"&gt;
+        &lt;div class="tooltip__text"&gt;Helper text&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt; -->
+
+&lt;div class="calendar"&gt;
+  &lt;div class="calendar__inner"&gt;
+    &lt;div class="calendar__body-wrapper"&gt;
+      &lt;div class="calendar__header"&gt;
+      October 2020
+      &lt;/div&gt;
+
+      &lt;div class="calendar__body"&gt;
+          &lt;div class="calendar__body-inner"&gt;
+              &lt;span class="calendar__item calendar__item_day"&gt;Mon&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_day"&gt;Tue&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_day"&gt;Wed&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_day"&gt;Thu&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_day"&gt;Fri&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_day"&gt;Sat&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_day"&gt;Sun&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;1&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;2&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;3&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;4&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;5&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;6&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;7&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;8&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;9&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;10&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_active"&gt;11&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_between-active"&gt;12&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_between-active"&gt;13&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_between-active"&gt;14&lt;/span&gt;
+              &lt;span class="calendar__item calendar__item_active"&gt;15&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;16&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;17&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;18&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;19&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;20&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;21&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;22&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;23&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;24&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;25&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;26&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;27&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;28&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;29&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;30&lt;/span&gt;
+              &lt;span class="calendar__item"&gt;31&lt;/span&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                  
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div id="tab02" class="tabs-block">
+                                    <pre>
+                                        <code>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    }
+    
+    .tooltip::before {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    }
+    
+    .tooltip__icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+    }
+    
+    .tooltip__icon .svg-icon {
+    fill: none;
+    color: var(--primary);
+    width: 100%;
+    height: 100%;
+    }
+    
+    .tooltip__help {
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    background: var(--primary);
+    position: absolute;
+    bottom: 100%;
+    transform: translate(-50%, -10px);
+    left: 50%;
+    color: var(--white);
+    padding: 13px 21px;
+    opacity: 0;
+    transition: opacity 0.2s linear, transform 0.1s linear;
+    pointer-events: none;
+    }
+    
+    .tooltip:hover .tooltip__help {
+    opacity: 1;
+    transform: translate(-50%, -13px);
+    pointer-events: all;
+    }
+    
+    .tooltip__help:after {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    }
+    
+    .tooltip__help:after {
+    border: 7px solid transparent;
+    border-top: 7px solid var(--primary);
+    }
+    
+    .tooltip__help:after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    }
+    
+    .tooltip_text {
+    margin: auto;
+    }
+                                    </code>
+                                </pre>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        <div class="wrap__footer">Reusable component library</div>
+    </div>       
+</body>
+</html>
